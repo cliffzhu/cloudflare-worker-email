@@ -1,0 +1,15 @@
+node_modules/
+.wrangler/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+# TypeScript compilation output (not needed for Cloudflare Workers)
+src/*.js
+src/*.js.map
+*.js
+*.js.map

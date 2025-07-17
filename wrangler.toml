@@ -1,0 +1,14 @@
+name = "cloudflare-worker-email"
+main = "src/email-worker.ts"
+compatibility_date = "2024-07-25"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+SMTP_HOST = "smtp.office365.com"
+SMTP_PORT = "587"
+SMTP_USERNAME = "your-email@domain.com"
+TO_EMAIL = "recipient@example.com"
+
+# Set these via wrangler secret put:
+# wrangler secret put SMTP_PASSWORD
+# wrangler secret put AUTH_CODE

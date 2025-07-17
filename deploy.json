@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "name": "SMTP_PASSWORD",
+      "type": "secret"
+    },
+    {
+      "name": "AUTH_CODE", 
+      "type": "secret"
+    }
+  ],
+  "vars": {
+    "SMTP_HOST": "smtp.office365.com",
+    "SMTP_PORT": "587",
+    "SMTP_USERNAME": "",
+    "TO_EMAIL": ""
+  },
+  "compatibility_date": "2024-07-25",
+  "compatibility_flags": ["nodejs_compat"]
+}
