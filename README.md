@@ -269,8 +269,7 @@ Click the "Deploy to Cloudflare Workers" button above for instant deployment:
 - Valid SMTP credentials
 
 **Office 365 Specific Requirements:**
-- User account must be excluded from MFA-required Conditional Access policies, OR
-- Use app-specific passwords if MFA is enforced
+- Ensure the user account is excluded from MFA-required Conditional Access policies, and generate app-specific password
 - Ensure SMTP Authentication is enabled in Exchange Online
 
 ## Security Notes
@@ -293,7 +292,7 @@ Click the "Deploy to Cloudflare Workers" button above for instant deployment:
 2. **"Authentication failed"**
    - Verify SMTP_USERNAME and SMTP_PASSWORD
    - Check if account requires app-specific passwords
-   - **For Office 365**: Ensure the user account is excluded from MFA-required Conditional Access policies, or use app-specific passwords
+   - **For Office 365**: Ensure the user account is excluded from MFA-required Conditional Access policies, and generate app-specific password
 
 3. **"Authorization header is required"**
    - Include `Authorization: Bearer YOUR_AUTH_CODE` header in API requests
